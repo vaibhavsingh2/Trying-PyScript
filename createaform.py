@@ -3,18 +3,17 @@ from pyscript import document
 
 import random
 import string
-'''
+
 # List to store dictionaries with unique alphanumeric codes and question data
 saved_code_list = []
 
 # Function to generate a random 5-character alphanumeric code
 def generate_random_code():
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
-'''
+
 # Function to add the current form data to saved_code_list and display the code
 def createrandomcode(self):
-    print("Hi")
-'''
+    
     # Generate a unique alphanumeric code
     random_code = generate_random_code()
 
@@ -44,4 +43,4 @@ def createrandomcode(self):
     document.getElementById("generatedCode").innerHTML = f"Form submitted! Your code is: <b>{random_code}</b>"
 
     # Optional: return the code if you want to use it further
-    return random_code'''
+    return random_code
