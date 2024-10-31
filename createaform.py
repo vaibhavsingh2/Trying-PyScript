@@ -12,7 +12,7 @@ def generate_random_code():
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
 '''
 # Function to add the current form data to saved_code_list and display the code
-def createrandomcode():
+def createrandomcode(event=None):
     print("Hi")
 '''
     # Generate a unique alphanumeric code
