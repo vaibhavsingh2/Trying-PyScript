@@ -1,0 +1,183 @@
+body{
+  background:#060c36;
+  color:#a2afde;
+}
+#title_font{
+  font-family: 'SisperdotzeRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-family: 'PierceRoman';
+   font-weight: normal;
+   font-style: normal;
+}
+
+ul {
+  list-style: none;
+  background-color: #020c54;
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  font-size: larger;
+}
+
+li a {
+  text-decoration: none;
+  color: greenyellow;
+  padding: 5px 10px;
+}
+
+h2{
+  color:aqua;
+  font-size:xx-large;
+}
+
+
+nav ul{
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+  /* text-decoration: none; */
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+  background: #020c54;
+  padding: 0.2px;
+  align-items: center;
+}
+
+
+
+p{
+  margin: 20px;
+  font-family: 'ArchitectsDaughterRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+/* AKSHAT */
+#akshat_ki_details{
+  margin: 2rem;
+}
+#akshat_img{
+
+  background: #020c54;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+#written_akshat{
+
+  background: #020c54;
+  padding: 50px;
+  text-align:center;
+  height: 150px;
+}
+.section1{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* VINAMRA */
+#vinamra_ki_details{
+  margin: 2rem;
+}
+#vinamra_img{
+
+  background: #020c54;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+#written_vinamra{
+
+  background: #020c54;
+  padding: 50px;
+  text-align:center;
+  height: 150px;
+}
+.section2{
+  display: flex;
+  justify-content:space-between;
+}
+
+
+/* VAIBHAV */
+#vaibhav_ki_details{
+  margin: 2rem;
+}
+#vaibhav_img{
+
+  background: #020c54;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+#written_vaibhav{
+
+  background: #020c54;
+  padding: 50px;
+  text-align:center;
+  height: 150pxx;
+}
+.section3{
+  display:flex;
+  justify-content: space-between;
+}
+
+
+
+/* ADARSH */
+#adarsh_ki_details{
+  margin: 2rem;
+}
+#adarsh_img{
+
+  background: #020c54;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+#written_adarsh{
+
+  background: #020c54;
+  padding: 50px;
+  text-align:center;
+  height: 150px;
+}
+.section4{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* CHATURYA */
+#chaturya_ki_details{
+  margin: 2rem;
+}
+#chaturya_img{
+
+  background: #020c54;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+#written_chaturya{
+
+  background: #020c54;
+  padding: 50px;
+  text-align:center;
+  height: 150px;
+}
+.section5{
+  display: flex;
+  justify-content: space-between;
+}

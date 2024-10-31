@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+    <script>
+        function disableButtons(questionId) {
+            // Select all buttons related to the question and disable them
+            const buttons = document.querySelectorAll(`[data-question='${questionId}']`);
+            buttons.forEach(button => {
+                button.disabled = true;
+            });
+            // Display the thank you message
+            document.querySelector("#thankyou-message").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <ul>
+        <li><a href="home_page.html">Home</a></li>
+        <li><a href="create_a_form.html">Create a form</a></li>
+        <li><a href="vote_on_a_form.html">Vote on a form</a></li>
+        <li><a href="view_results.html">View Results</a></li>
+        <li><a href="about.html">About Team</a></li>
+  </ul>
+  
+    <h1>Vote for Your Favorites!</h1>
+    <form action="/vote/" method="POST">
+        {% csrf_token %}
+        <div id="questions">
+            {% for question in questions %}
+                <div>
+                    <h3>{{ question.question_text }}</h3>
+                    {% for option in question.option_set.all %}
+                        <button type="button" data-question="{{ question.id }}" 
+                                onclick="disableButtons('{{ question.id }}'); 
+                                         this.form['question_{{ question.id }}'].value = '{{ option.id }}'">
+                            {{ option.option_text }}
+                        </button>
+                    {% endfor %}
+                    <input type="hidden" name="question_{{ question.id }}" />
+                </div>
+            {% endfor %}
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="thankyou-message" style="display: none;">Thank you for voting!</p>
+</body>
+</html>

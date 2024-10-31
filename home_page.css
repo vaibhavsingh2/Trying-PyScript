@@ -1,0 +1,87 @@
+body{
+  background:#060c36;
+  color:#a2afde;
+}
+#headings{
+  font-family: 'SisperdotzeRegular';
+   font-weight: normal;
+   font-style: normal;
+   text-align: center;
+}
+
+h1 img{
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+}
+
+ul li a{
+  text-decoration: none;
+  /* display: inline; */
+  color: yellow;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+  /* text-decoration: none; */
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+  background: #020c54;
+  padding: 0.2px;
+  align-items: center;
+}
+li{
+  font-family: 'PierceRoman';
+   font-weight: normal;
+   font-style: normal;
+}
+#img1{
+  width: 1200px;
+  height: 750px;
+  background: #020c54;
+  padding: 20px;
+}
+#companies{
+  height: 200px;
+  width: 200px;
+  margin:10px;
+  background: #3d94bf;
+  padding: 20px;
+}
+p{
+  font-family: 'ArchitectsDaughterRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+#topics{
+  background: #020c54;
+  width: 35%;
+  font-size: 25px;
+  font-family: 'MrsBeasleyRegular';
+   font-weight: bold;
+   font-style: normal;
+}
+#extra_written{
+  font-size: 28px;
+}
+.about_web{
+  margin-left: 10px;
+}
+.contact_us{
+
+  background: #020c54;
+  text-align: center;
+}
+#subheadings{
+  font-size: 25px;
+  font-family: 'MrsBeasleyRegular';
+   font-weight: bold;
+   font-style: normal;
+   text-align: center;
+}
